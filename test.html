@@ -6,9 +6,31 @@
             padding:50px 50px;
             font-size:30px;
             background-image:src(D:\htm\logo.jpg);
-            padding: 10px 10px;
+            padding: 30px 10px;
             background-image: linear-gradient(to left, #434343 0%, black 100%);
         }
+    /* Thiết lập thanh tìm kiếm */
+    .search-bar {
+        float: right; /* Đẩy phần tử sang phải */
+        /* Cách lề trên */
+    }
+
+    /* Thiết lập nút tìm kiếm */
+    .search-button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Thiết lập ô nhập tìm kiếm */
+    .search-input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
     </style>
 </head>
 <body>
@@ -18,7 +40,10 @@
             height="30px" 
             src="D:\htm\logo.jpg" 
             alt="vi du" />
-            <input type="text" placeholder="Tìm kiếm..."/>
+            <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Tìm kiếm...">
+    <button type="button" class="search-button">Tìm kiếm</button>
+</div>
     </div>
 </body>
 </html>
