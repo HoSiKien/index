@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <link href="E:\html\c.css" rel="stylesheet" media="screen,print" />
+   <style>
+   body {
+      background-color: #DCDCDC;
+   }
+   </style>
     <style type="text/css">
         div{
-            padding:50px 50px;
+            padding:100px 100px;
             font-size:30px;
-            background-image:src(D:\htm\logo.jpg);
-            padding: 30px 10px;
+            background-image:src(E:\html\logo.jpg);
+            padding: 5px 10px;
             background-image: linear-gradient(to left, #434343 0%, black 100%);
-        }
+
+	}
     /* Thiết lập thanh tìm kiếm */
     .search-bar {
         float: right; /* Đẩy phần tử sang phải */
         /* Cách lề trên */
     }
-
-    /* Thiết lập nút tìm kiếm */
-    .search-button {
+    .signin-bar {
+	float: right
+    }
+    .GachChan{
+	text-decoration: underline;
+    }
+    .signin-button {
         padding: 5px 10px;
-        background-color: #007bff;
+        background-color: black;
         color: white;
         border: none;
         border-radius: 3px;
         cursor: pointer;
     }
+    /* Thiết lập nút tìm kiếm */
+    .search-button {
+        border="10px"
+            width="100px"
+            height="100px"
+            src="E:\html\TimKiem.png"
+            alt="tim kiem" />
+    }
 
     /* Thiết lập ô nhập tìm kiếm */
     .search-input {
-        padding: 5px;
+        padding: 5px 20px;/* kich cỡ. Dọc - Ngang*/
         border: 1px solid #ccc;
-        border-radius: 3px;
+        border-radius:10px; /*độ cong của ô tìm kiếm*/
     }
     </style>
 </head>
 <body>
-    <div> <img 
-            border="3px"
-            width="30px"
-            height="30px" 
-            src="D:\htm\logo.jpg" 
-            alt="vi du" />
+
+    <div>
             <div class="search-bar">
-    <input type="text" class="search-input" placeholder="Tìm kiếm...">
-    <button type="button" class="search-button">Tìm kiếm</button>
-</div>
+            		<button type="button"  class="signin-button">Sign In</button>
+                <button type="button"  class="signin-button">Register</button>
+                <input type="text" class="search-input"  placeholder="Tìm kiếm...">
+           <a href="https://github.com/HoSiKien/index" target="_blank" title="tim kiem"><img src="E:\html\TimKiem.png" srcset="E:\html\TimKiem.png" alt="tim kiem" style="width:10px" border="0" /> </a>
+            </div>
+	        <a href="https://github.com/HoSiKien/index" target="_blank" title="logo"><img src="E:\html\logo.jpg" srcset="E:\html\logo.jpg 2x" alt="logo" style="width:50px" border="0" /></a>
+
     </div>
+    <hr class = "signin-bar" size="10" width="100%" align="right" color="black">
+
 </body>
 </html>
